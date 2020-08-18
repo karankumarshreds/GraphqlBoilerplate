@@ -1,6 +1,6 @@
 #### BABEL 
 
-> npm install babel-cli@6.26.0 babel-preset-env@1.7.0
+> npm install --save-dev @babel/cli @babel/core @babel/node @babel/preset-env nodemon
 
 > touch .babelrc
 
@@ -9,7 +9,7 @@ Add the following config to it:
 ```json
 {
     "presets": [
-        "env"
+        "@babel/preset-env"
     ]
 }
 ```
@@ -18,7 +18,10 @@ Add following to package.json (only for development):
 
 ```json
 "scripts": {
-    "start": "babel-node src/index.js"
+    "start": "nodemon src/index.js --exec babel-node"
   }
 ```
 
+#### GRAPHQL
+
+> npm install graphql-yoga@1.16.7
