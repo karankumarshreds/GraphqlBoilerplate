@@ -31,4 +31,4 @@ const server = new GraphQLServer({
 
 server.start(() => {
     console.log('Server started on port 4000')
-}) 
+})
