@@ -26,7 +26,7 @@ export const posts = [
     {
         id: '1',
         title: 'John post',
-        author: '1'
+        author: '1',
     },
     {
         id: '2',
@@ -55,22 +55,26 @@ export const comments = [
     {
         id: '1',
         text: 'First comment',
-        author: '1'
+        author: '1',
+        post: '1'
 
     },
     {
         id: '2',
         text: 'Second comment',
-        author: '2'
+        author: '2',
+        post: '1'
     },
     {
         id: '3',
         text: 'Third comment',
-        author: '3'
+        author: '3',
+        post: '1'
     },
     {
         id: '4',
         text: 'Fourth comment',
-        author: '4'
+        author: '4',
+        post: '1'
     }
 ]
